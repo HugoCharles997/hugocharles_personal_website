@@ -1,6 +1,7 @@
+@import "../../../assets/scss/variables.scss";
+
 button {
   font-size: 1.2rem;
-  color: #fff;
   display: inline-block;
   position: relative;
 }
@@ -14,7 +15,7 @@ button:after {
   height: 2px;
   left: 50%;
   position: absolute;
-  background: #272626;
+  background: $dark-color;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
@@ -44,11 +45,11 @@ button:hover:after {
 }
 
 .navbar-container {
-  border-bottom: 2px solid rgba(219, 215, 215, 0.673);
+  border-bottom: 2px solid $grey-color;
 }
 
 .line::before {
   content: "";
   display: block;
-  border-top: 1px solid black;
+  border-top: 1px solid $dark-color;
 }

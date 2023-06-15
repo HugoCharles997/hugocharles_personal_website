@@ -1,0 +1,25 @@
+@import "../../../assets/scss/variables.scss";
+
+.icon path {
+  fill: $dark-color;
+}
+
+.footer-container {
+  position: fixed;
+  bottom: 0;
+}
+
+.icon-container {
+  display: flex;
+  margin: 100px;
+}
+
+.icon {
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.copyright-container h5 {
+  font-size: 1.5rem;
+  margin-right: 22rem;
+}
