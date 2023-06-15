@@ -1,28 +1,46 @@
 <div class="container">
   <div class="row">
     <div class="col">
-      <div class="d-flex justify-content-start">
+      <div class="d-flex justify-content-start mt-3">
         <div class="logo-container">
           <img class="logo" src="assets/images/logo_hugo.png" alt="Logo" />
         </div>
 
-        <button class="toggle-button" mat-button [matMenuTriggerFor]="nav">
-          Menu
+        <button
+          (click)="animateMenuOnClick()"
+          type="button"
+          class="toggle-menu-button"
+          mat-button
+          [matMenuTriggerFor]="nav"
+        >
+          menu
         </button>
         <mat-menu #nav="matMenu">
-          <button mat-menu-item>Home</button>
-          <button mat-menu-item [matMenuTriggerFor]="about">About</button>
-          <button mat-menu-item [matMenuTriggerFor]="projects">Projects</button>
-          <button mat-menu-item>Music</button>
-          <button mat-menu-item>Contact</button>
+          <button class="toggle-menu-item" mat-menu-item>home</button>
+          <button
+            class="toggle-menu-item"
+            mat-menu-item
+            [matMenuTriggerFor]="about"
+          >
+            about
+          </button>
+          <button
+            class="toggle-menu-item"
+            mat-menu-item
+            [matMenuTriggerFor]="projects"
+          >
+            projects
+          </button>
+          <button class="toggle-menu-item" mat-menu-item>music</button>
+          <button class="toggle-menu-item" mat-menu-item>contact</button>
         </mat-menu>
         <mat-menu #about="matMenu">
-          <button mat-menu-item>Career</button>
-          <button mat-menu-item>Hobbies</button>
+          <button mat-menu-item>career</button>
+          <button mat-menu-item>hobbies</button>
         </mat-menu>
         <mat-menu #projects="matMenu">
-          <button mat-menu-item>Web Development</button>
-          <button mat-menu-item>Audio Development</button>
+          <button mat-menu-item>web development</button>
+          <button mat-menu-item>audio development</button>
         </mat-menu>
       </div>
     </div>
@@ -31,26 +49,33 @@
       <div class="d-flex justify-content-end">
         <div class="left-navbar">
           <div class="d-flex navbar-item-container">
-            <button class="pl-4 pr-4" mat-button>Home</button>
-            <button class="pl-4 pr-4" mat-button [matMenuTriggerFor]="about">
-              About
+            <button class="home-button pl-4 pr-4" mat-button>home</button>
+            <button
+              class="pl-4 pr-4 about-button"
+              mat-button
+              [matMenuTriggerFor]="about"
+            >
+              about
             </button>
-            <mat-menu #about="matMenu"> </mat-menu>
-            <button class="pl-4 pr-4" mat-button [matMenuTriggerFor]="projects">
-              Projects
+
+            <button
+              class="pl-4 pr-4 projects-button"
+              mat-button
+              [matMenuTriggerFor]="projects"
+            >
+              projects
             </button>
-            <mat-menu #projects="matMenu"> </mat-menu>
-            <button class="pl-4 pr-4" mat-button>Music</button>
-            <button class="pl-4 pr-4" mat-button>Contact</button>
+            <button class="pl-4 pr-4 music-button" mat-button>music</button>
+            <button class="pl-4 pr-4 contact-button" mat-button>contact</button>
 
             <mat-menu #about="matMenu">
-              <button mat-menu-item>Career</button>
-              <button mat-menu-item>Hobbies</button>
+              <button mat-menu-item>career</button>
+              <button mat-menu-item>hobbies</button>
             </mat-menu>
 
             <mat-menu #projects="matMenu">
-              <button mat-menu-item>Web Development</button>
-              <button mat-menu-item>Audio Development</button>
+              <button mat-menu-item>web development</button>
+              <button mat-menu-item>audio development</button>
             </mat-menu>
           </div>
         </div>
