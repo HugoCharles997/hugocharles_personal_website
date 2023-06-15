@@ -5,10 +5,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomepageComponent } from './views/homepage/homepage.component';
+import { NavbarComponent } from './layout/navbar/navbar.component';
 
 @NgModule({
-  declarations: [AppComponent, HomepageComponent],
-  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
+  declarations: [AppComponent, HomepageComponent, NavbarComponent],
+  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, HomepageComponent, NavbarComponent],
   providers: [],
   bootstrap: [AppComponent],
 })
