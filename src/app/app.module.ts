@@ -8,8 +8,13 @@ import { HomepageComponent } from './views/homepage/homepage.component';
 import { NavbarComponent } from './layout/navbar/navbar.component';
 
 @NgModule({
-  declarations: [AppComponent, HomepageComponent, NavbarComponent],
-  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, HomepageComponent, NavbarComponent],
+  declarations: [AppComponent, HomepageComponent],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    NavbarComponent,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
