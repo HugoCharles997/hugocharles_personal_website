@@ -31,21 +31,32 @@
           >
             projects
           </button>
-          <button class="toggle-menu-item" mat-menu-item>music</button>
+          <button
+            class="toggle-menu-item"
+            mat-menu-item
+            [matMenuTriggerFor]="music"
+          >
+            music
+          </button>
           <button class="toggle-menu-item" mat-menu-item>contact</button>
         </mat-menu>
         <mat-menu #about="matMenu">
+          <button mat-menu-item>skills</button>
           <button mat-menu-item>career</button>
           <button mat-menu-item>hobbies</button>
         </mat-menu>
         <mat-menu #projects="matMenu">
-          <button mat-menu-item>web development</button>
-          <button mat-menu-item>audio development</button>
+          <button mat-menu-item>web/design</button>
+          <button mat-menu-item>BE/fullstack</button>
+        </mat-menu>
+        <mat-menu #music="matMenu">
+          <button mat-menu-item>production</button>
+          <button mat-menu-item>audio programming</button>
         </mat-menu>
       </div>
     </div>
 
-    <div class="col">
+    <div class="col navbar-container">
       <div class="d-flex justify-content-end">
         <div class="left-navbar">
           <div class="d-flex navbar-item-container">
@@ -65,20 +76,23 @@
             >
               projects
             </button>
-            <button class="pl-4 pr-4 music-button" mat-button>music</button>
+            <button
+              class="pl-4 pr-4 music-button"
+              mat-button
+              [matMenuTriggerFor]="music"
+            >
+              music
+            </button>
             <button class="pl-4 pr-4 contact-button" mat-button>contact</button>
 
-            <mat-menu #about="matMenu">
-              <button mat-menu-item>career</button>
-              <button mat-menu-item>hobbies</button>
-            </mat-menu>
+            <mat-menu #about="matMenu"> </mat-menu>
 
-            <mat-menu #projects="matMenu">
-              <button mat-menu-item>web development</button>
-              <button mat-menu-item>audio development</button>
-            </mat-menu>
+            <mat-menu #projects="matMenu"> </mat-menu>
+
+            <mat-menu #music="matMenu"> </mat-menu>
           </div>
         </div>
+        <div class="line"></div>
       </div>
     </div>
   </div>

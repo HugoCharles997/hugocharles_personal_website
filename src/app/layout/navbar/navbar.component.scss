@@ -42,3 +42,13 @@ button:hover:after {
 .navbar-item-container {
   margin-top: 4.3vh;
 }
+
+.navbar-container {
+  border-bottom: 2px solid rgba(219, 215, 215, 0.673);
+}
+
+.line::before {
+  content: "";
+  display: block;
+  border-top: 1px solid black;
+}
