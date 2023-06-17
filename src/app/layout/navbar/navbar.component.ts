@@ -101,19 +101,14 @@ export class NavbarComponent {
 
     homeButton.addEventListener('mouseenter', () => {
       gsap.to(homeButton, {
-        y: 1,
+        scale: 1.05,
         duration: 0.1,
-        yoyo: true,
-        repeat: 1,
       });
     });
     homeButton.addEventListener('mouseleave', () => {
       gsap.to(homeButton, {
-        y: 0,
         scale: 1,
         duration: 0.1,
-        yoyo: true,
-        repeat: 1,
       });
     });
 
