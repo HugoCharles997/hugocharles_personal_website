@@ -19,7 +19,7 @@ export class NavbarComponent {
 
   constructor() {}
   ngOnInit() {
-    // this.bounceDelayNavbar();
+    this.bounceDelayNavbar();
     this.animateMenu();
     this.animateButtons();
   }
@@ -244,7 +244,7 @@ export class NavbarComponent {
         repeat: Infinity,
         ease: 'bounce',
         scale: 1.15,
-        repeatDelay: 10,
+        repeatDelay: 8,
         color: 'red',
         transition: 'ease',
       });
@@ -258,7 +258,7 @@ export class NavbarComponent {
         repeat: Infinity,
         ease: 'bounce',
         scale: 1.15,
-        repeatDelay: 10,
+        repeatDelay: 8,
       });
     });
 
@@ -270,7 +270,7 @@ export class NavbarComponent {
         repeat: Infinity,
         ease: 'bounce',
         scale: 1.15,
-        repeatDelay: 10,
+        repeatDelay: 8,
       });
     });
 
@@ -282,7 +282,7 @@ export class NavbarComponent {
         repeat: Infinity,
         ease: 'bounce',
         scale: 1.15,
-        repeatDelay: 10,
+        repeatDelay: 8,
       });
     });
   }
