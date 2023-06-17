@@ -20,12 +20,18 @@ svg {
 .icon {
   margin-right: 60px;
   margin-bottom: 30px;
+  opacity: 0.85;
+}
+
+.icon:hover {
+  opacity: 1;
 }
 
 .copyright-container button {
   margin-right: 22rem;
   margin-top: 15px;
   max-width: 200px;
+  cursor: default;
 }
 
 .copyright-container h5 {

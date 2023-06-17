@@ -24,7 +24,7 @@ export class FooterComponent {
     const twitterIcon: any = document.querySelector('.twitter-icon');
     twitterIcon.classList.add('hidden-button');
 
-    gsap.delayedCall(3, () => {
+    gsap.delayedCall(3.5, () => {
       linkedinIcon.classList.remove('hidden-button');
       gsap.to('.linkedin-icon', {
         x: 30,
@@ -33,7 +33,7 @@ export class FooterComponent {
       });
     });
 
-    gsap.delayedCall(3.6, () => {
+    gsap.delayedCall(4.1, () => {
       githubIcon.classList.remove('hidden-button');
       gsap.to('.github-icon', {
         x: 30,
@@ -42,7 +42,7 @@ export class FooterComponent {
       });
     });
 
-    gsap.delayedCall(4.2, () => {
+    gsap.delayedCall(4.7, () => {
       twitterIcon.classList.remove('hidden-button');
       gsap.to('.twitter-icon', {
         x: 30,
