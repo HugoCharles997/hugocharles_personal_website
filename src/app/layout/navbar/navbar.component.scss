@@ -1,9 +1,17 @@
 @import "../../../assets/scss/variables.scss";
+@import "../../../assets/scss/utils.scss";
+
+body {
+  margin: 0;
+  padding: 0;
+  color: $dark-color;
+}
 
 button {
   font-size: 1.2rem;
   display: inline-block;
   position: relative;
+  color: $dark-color !important;
 }
 
 //ANIM BUTTON
@@ -22,10 +30,6 @@ button:after {
 button:hover:after {
   width: 100%;
   left: 0;
-}
-
-.hidden-button {
-  visibility: hidden;
 }
 
 .toggle-menu-button {
@@ -52,4 +56,10 @@ button:hover:after {
   content: "";
   display: block;
   border-top: 1px solid $dark-color;
+}
+
+.navbar-item-container button.active {
+  text-decoration: underline;
+  text-decoration-color: #000;
+  color: red;
 }

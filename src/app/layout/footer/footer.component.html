@@ -3,9 +3,9 @@
     <div class="col footer-container">
       <div class="d-flex justify-content-start mt-3">
         <div class="icons-container">
-          <a href="">
+          <a (click)="animateIconsOnClick()" href="">
             <svg
-              class="icon linkedin-icon"
+              class="icon linkedin-icon hidden-button"
               width="44"
               height="44"
               viewBox="0 0 640 640"
@@ -16,17 +16,11 @@
             </svg>
           </a>
 
-          <a href="">
+          <a (click)="animateIconsOnClick()" href="">
             <svg
-              class="icon github-icon"
-              xmlns="http://www.w3.org/2000/svg"
+              class="icon github-icon hidden-button"
               width="44"
               height="44"
-              shape-rendering="geometricPrecision"
-              text-rendering="geometricPrecision"
-              image-rendering="optimizeQuality"
-              fill-rule="evenodd"
-              clip-rule="evenodd"
               viewBox="0 0 640 640"
             >
               <path
@@ -35,7 +29,7 @@
             </svg>
           </a>
 
-          <a href="">
+          <a (click)="animateIconsOnClick()" href="">
             <svg
               class="icon twitter-icon"
               xmlns="http://www.w3.org/2000/svg"
@@ -58,7 +52,9 @@
         <div class="col copyright-container">
           <div class="d-flex justify-content-end">
             <div class="left-navbar">
-              <h5>©Hugo Charles</h5>
+              <button mat-button>
+                <h5>©Hugo Charles</h5>
+              </button>
             </div>
           </div>
         </div>
