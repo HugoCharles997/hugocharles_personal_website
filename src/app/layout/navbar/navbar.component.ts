@@ -175,7 +175,6 @@ export class NavbarComponent {
       duration: 0.75,
       ease: 'bounce',
       repeat: 1,
-      transition: 'ease',
     });
 
     gsap.delayedCall(0.25, () => {
