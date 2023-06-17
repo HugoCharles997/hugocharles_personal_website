@@ -12,6 +12,7 @@
           class="toggle-menu-button"
           mat-button
           [matMenuTriggerFor]="nav"
+          (menuClosed)="closeMenu()"
         >
           menu
         </button>
@@ -96,7 +97,7 @@
               music
             </button>
             <button
-              class="pl-4 pr-4 contact-button"
+              class="contact-button pl-4 pr-4"
               mat-button
               routerLink="/contact"
               routerLinkActive="active"

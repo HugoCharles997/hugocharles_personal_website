@@ -58,8 +58,10 @@ button:hover:after {
   border-top: 1px solid $dark-color;
 }
 
-.navbar-item-container button.active {
-  text-decoration: underline;
-  text-decoration-color: #000;
-  color: red;
-}
+//for currentIndex check style
+
+// .navbar-item-container button.active {
+//   text-decoration: underline;
+//   text-decoration-color: #000;
+//   color: red;
+// }
