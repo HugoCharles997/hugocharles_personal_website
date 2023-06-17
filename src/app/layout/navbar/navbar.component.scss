@@ -34,7 +34,6 @@ button:hover:after {
 
 .toggle-menu-button {
   font-size: 0.9rem;
-  margin-left: 123px;
 }
 .toggle-menu-item {
   align-items: center;
@@ -50,12 +49,6 @@ button:hover:after {
 
 .navbar-container {
   border-bottom: 2px solid $grey-color;
-}
-
-.line::before {
-  content: "";
-  display: block;
-  border-top: 1px solid $dark-color;
 }
 
 //for currentIndex check style

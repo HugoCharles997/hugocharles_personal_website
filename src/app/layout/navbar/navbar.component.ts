@@ -40,10 +40,10 @@ export class NavbarComponent {
   animateMenu() {
     const button: any = document.querySelector('.toggle-menu-button');
     button.classList.add('hidden-button');
-    gsap.delayedCall(0, () => {
+    gsap.delayedCall(1, () => {
       button.classList.remove('hidden-button');
       gsap.to('.toggle-menu-button', {
-        x: -100,
+        y: 20,
         duration: 3,
         ease: 'elastic',
       });
