@@ -60,19 +60,29 @@
       <div class="d-flex justify-content-end">
         <div class="left-navbar">
           <div class="d-flex navbar-item-container">
-            <button class="home-button pl-4 pr-4" mat-button>home</button>
+            <button
+              class="home-button pl-4 pr-4"
+              mat-button
+              routerLink="/home"
+              routerLinkActive="active"
+            >
+              home
+            </button>
             <button
               class="pl-4 pr-4 about-button"
               mat-button
               [matMenuTriggerFor]="about"
+              routerLink="/about"
+              routerLinkActive="active"
             >
               about
             </button>
-
             <button
               class="pl-4 pr-4 projects-button"
               mat-button
               [matMenuTriggerFor]="projects"
+              routerLink="/projects"
+              routerLinkActive="active"
             >
               projects
             </button>
@@ -80,15 +90,22 @@
               class="pl-4 pr-4 music-button"
               mat-button
               [matMenuTriggerFor]="music"
+              routerLink="/music"
+              routerLinkActive="active"
             >
               music
             </button>
-            <button class="pl-4 pr-4 contact-button" mat-button>contact</button>
+            <button
+              class="pl-4 pr-4 contact-button"
+              mat-button
+              routerLink="/contact"
+              routerLinkActive="active"
+            >
+              contact
+            </button>
 
             <mat-menu #about="matMenu"> </mat-menu>
-
             <mat-menu #projects="matMenu"> </mat-menu>
-
             <mat-menu #music="matMenu"> </mat-menu>
           </div>
         </div>

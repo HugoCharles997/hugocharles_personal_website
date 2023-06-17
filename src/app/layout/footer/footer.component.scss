@@ -1,11 +1,12 @@
 @import "../../../assets/scss/variables.scss";
+@import "../../../assets/scss/utils.scss";
 
-.icon path {
+svg path {
   fill: $dark-color;
   color: $dark-color;
 }
 
-.icon {
+svg {
   fill: $dark-color;
   color: $dark-color;
 }
@@ -21,12 +22,30 @@
   margin-bottom: 30px;
 }
 
-.icon:hover {
-  transform: scale(1.1);
-  transition: ease-out 0.2s;
+.copyright-container button {
+  margin-right: 22rem;
+  margin-top: 15px;
+  max-width: 200px;
 }
 
 .copyright-container h5 {
-  font-size: 1.3rem;
-  margin-right: 22rem;
+  font-size: 1rem;
+}
+
+//ANIM BUTTON
+button:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: $dark-color;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+button:hover:after {
+  width: 100%;
+  left: 0;
 }

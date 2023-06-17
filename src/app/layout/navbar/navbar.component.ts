@@ -99,57 +99,57 @@ export class NavbarComponent {
       });
     });
 
-    homeButton.addEventListener('mouseenter', () => {
-      gsap.to(homeButton, {
-        scale: 1.05,
-        duration: 0.1,
-      });
-    });
-    homeButton.addEventListener('mouseleave', () => {
-      gsap.to(homeButton, {
-        scale: 1,
-        duration: 0.1,
-      });
-    });
+    // homeButton.addEventListener('mouseenter', () => {
+    //   gsap.to(homeButton, {
+    //     scale: 1.05,
+    //     duration: 0.1,
+    //   });
+    // });
+    // homeButton.addEventListener('mouseleave', () => {
+    //   gsap.to(homeButton, {
+    //     scale: 1,
+    //     duration: 0.1,
+    //   });
+    // });
 
-    aboutButton.addEventListener('mouseenter', () => {
-      gsap.to(aboutButton, {
-        scale: 1.05,
-        duration: 0.1,
-      });
-    });
-    aboutButton.addEventListener('mouseleave', () => {
-      gsap.to(aboutButton, { scale: 1, duration: 0.1 });
-    });
+    // aboutButton.addEventListener('mouseenter', () => {
+    //   gsap.to(aboutButton, {
+    //     scale: 1.05,
+    //     duration: 0.1,
+    //   });
+    // });
+    // aboutButton.addEventListener('mouseleave', () => {
+    //   gsap.to(aboutButton, { scale: 1, duration: 0.1 });
+    // });
 
-    projectsButton.addEventListener('mouseenter', () => {
-      gsap.to(projectsButton, {
-        scale: 1.05,
-        duration: 0.1,
-      });
-    });
-    projectsButton.addEventListener('mouseleave', () => {
-      gsap.to(projectsButton, { scale: 1, duration: 0.1 });
-    });
+    // projectsButton.addEventListener('mouseenter', () => {
+    //   gsap.to(projectsButton, {
+    //     scale: 1.05,
+    //     duration: 0.1,
+    //   });
+    // });
+    // projectsButton.addEventListener('mouseleave', () => {
+    //   gsap.to(projectsButton, { scale: 1, duration: 0.1 });
+    // });
 
-    musicButton.addEventListener('mouseenter', () => {
-      gsap.to(musicButton, {
-        scale: 1.05,
-        duration: 0.1,
-      });
-    });
-    musicButton.addEventListener('mouseleave', () => {
-      gsap.to(musicButton, { scale: 1, duration: 0.1 });
-    });
+    // musicButton.addEventListener('mouseenter', () => {
+    //   gsap.to(musicButton, {
+    //     scale: 1.05,
+    //     duration: 0.1,
+    //   });
+    // });
+    // musicButton.addEventListener('mouseleave', () => {
+    //   gsap.to(musicButton, { scale: 1, duration: 0.1 });
+    // });
 
-    contactButton.addEventListener('mouseenter', () => {
-      gsap.to(contactButton, {
-        scale: 1.05,
-        duration: 0.1,
-      });
-    });
-    contactButton.addEventListener('mouseleave', () => {
-      gsap.to(contactButton, { scale: 1, duration: 0.1 });
-    });
+    // contactButton.addEventListener('mouseenter', () => {
+    //   gsap.to(contactButton, {
+    //     scale: 1.05,
+    //     duration: 0.1,
+    //   });
+    // });
+    // contactButton.addEventListener('mouseleave', () => {
+    //   gsap.to(contactButton, { scale: 1, duration: 0.1 });
+    // });
   }
 }
