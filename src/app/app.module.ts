@@ -6,10 +6,16 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomepageComponent } from './views/homepage/homepage.component';
 import { NavbarComponent } from './layout/navbar/navbar.component';
+import { FooterComponent } from './layout/footer/footer.component';
 
 @NgModule({
-  declarations: [AppComponent, HomepageComponent, NavbarComponent],
-  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, HomepageComponent, NavbarComponent],
+  declarations: [AppComponent, HomepageComponent, FooterComponent],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    NavbarComponent,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

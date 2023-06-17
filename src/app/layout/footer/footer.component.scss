@@ -1,0 +1,32 @@
+@import "../../../assets/scss/variables.scss";
+
+.icon path {
+  fill: $dark-color;
+  color: $dark-color;
+}
+
+.icon {
+  fill: $dark-color;
+  color: $dark-color;
+}
+
+.footer-container {
+  height: 100px;
+  position: fixed;
+  bottom: 0;
+}
+
+.icon {
+  margin-right: 60px;
+  margin-bottom: 30px;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+  transition: ease-out 0.2s;
+}
+
+.copyright-container h5 {
+  font-size: 1.3rem;
+  margin-right: 22rem;
+}

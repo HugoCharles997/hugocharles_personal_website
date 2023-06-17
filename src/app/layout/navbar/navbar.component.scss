@@ -1,3 +1,55 @@
+@import "../../../assets/scss/variables.scss";
+
 button {
   font-size: 1.2rem;
+  display: inline-block;
+  position: relative;
+}
+
+//ANIM BUTTON
+button:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: $dark-color;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+button:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.hidden-button {
+  visibility: hidden;
+}
+
+.toggle-menu-button {
+  font-size: 0.9rem;
+  margin-left: 123px;
+}
+.toggle-menu-item {
+  align-items: center;
+}
+
+.logo {
+  max-width: 180px;
+}
+
+.navbar-item-container {
+  margin-top: 4.3vh;
+}
+
+.navbar-container {
+  border-bottom: 2px solid $grey-color;
+}
+
+.line::before {
+  content: "";
+  display: block;
+  border-top: 1px solid $dark-color;
 }
