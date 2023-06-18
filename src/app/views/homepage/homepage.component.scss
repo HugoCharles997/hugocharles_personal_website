@@ -1,4 +1,10 @@
 @import "../../../assets/scss/variables.scss";
+
+.container-mainpage {
+  margin-top: 30px;
+  background: $low-grey-color !important;
+  height: 65vh;
+}
 .tw-container {
   margin-top: 200px;
   // background: $grey-color;

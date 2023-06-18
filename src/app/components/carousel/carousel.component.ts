@@ -149,7 +149,7 @@ export class CarouselComponent implements OnInit {
     };
 
     // Automatically trigger the "up" button click every 4 seconds
-    setInterval(triggerUpButtonClick, 4000);
+    setInterval(triggerUpButtonClick, 6000);
   }
 
   appearsCarousel() {
