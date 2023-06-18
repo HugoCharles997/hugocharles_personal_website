@@ -7,12 +7,12 @@
         </div>
 
         <button
-          (click)="animateMenuOnClick()"
+          (click)="animateMenuOnOpen()"
           type="button"
           class="toggle-menu-button"
           mat-button
           [matMenuTriggerFor]="nav"
-          (menuClosed)="closeMenu()"
+          (menuClosed)="animateMenuOnClose()"
         >
           menu
         </button>

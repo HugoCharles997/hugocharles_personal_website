@@ -19,23 +19,32 @@ export class NavbarComponent {
 
   constructor() {}
   ngOnInit() {
-    // this.bounceDelayNavbar();
     this.animateMenu();
     this.animateButtons();
   }
 
   public isMenuOpen: boolean = false;
 
-  animateMenuOnClick() {
+  animateMenuOnOpen() {
     gsap.to('.toggle-menu-button', {
-      x: 0,
+      x: 100,
       duration: 1,
-      yoyo: true,
-      repeat: 1,
+      repeat: 0,
       ease: 'power3',
     });
 
     this.animateButtonsReverse();
+  }
+
+  animateMenuOnClose() {
+    gsap.to('.toggle-menu-button', {
+      x: 0,
+      duration: 1,
+      repeat: 0,
+      ease: 'power3',
+    });
+
+    this.animateButtonsReturn();
   }
   animateMenu() {
     const button: any = document.querySelector('.toggle-menu-button');
@@ -232,61 +241,5 @@ export class NavbarComponent {
         contactButton.classList.add('hidden-button');
       });
     });
-  }
-
-  // bounceDelayNavbar() {
-  //   gsap.delayedCall(5, () => {
-  //     gsap.to('.home-button', {
-  //       duration: 1,
-  //       y: 50,
-  //       yoyo: true,
-  //       repeat: Infinity,
-  //       ease: 'bounce',
-  //       scale: 1.15,
-  //       repeatDelay: 8,
-  //       color: 'red',
-  //       transition: 'ease',
-  //     });
-  //   });
-
-  //   gsap.delayedCall(5.4, () => {
-  //     gsap.to('.about-button', {
-  //       duration: 1,
-  //       y: 50,
-  //       yoyo: true,
-  //       repeat: Infinity,
-  //       ease: 'bounce',
-  //       scale: 1.15,
-  //       repeatDelay: 8,
-  //     });
-  //   });
-
-  //   gsap.delayedCall(5.8, () => {
-  //     gsap.to('.projects-button', {
-  //       duration: 1,
-  //       y: 50,
-  //       yoyo: true,
-  //       repeat: Infinity,
-  //       ease: 'bounce',
-  //       scale: 1.15,
-  //       repeatDelay: 8,
-  //     });
-  //   });
-
-  //   gsap.delayedCall(6.2, () => {
-  //     gsap.to('.music-button', {
-  //       duration: 1,
-  //       y: 50,
-  //       yoyo: true,
-  //       repeat: Infinity,
-  //       ease: 'bounce',
-  //       scale: 1.15,
-  //       repeatDelay: 8,
-  //     });
-  //   });
-  // }
-
-  closeMenu() {
-    this.animateButtonsReturn();
   }
 }
