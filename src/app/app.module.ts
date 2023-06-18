@@ -6,10 +6,11 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomepageComponent } from './views/homepage/homepage.component';
 import { NavbarComponent } from './layout/navbar/navbar.component';
+import { CarouselComponent } from './components/carousel/carousel.component';
 import { FooterComponent } from './layout/footer/footer.component';
 
 @NgModule({
-  declarations: [AppComponent, HomepageComponent],
+  declarations: [AppComponent, HomepageComponent, CarouselComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

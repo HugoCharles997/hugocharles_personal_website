@@ -28,7 +28,7 @@ export class HomepageComponent {
       loop: true,
     });
     writer1
-      .type('Hello there. ')
+      .type('Hello there, ')
       .rest(300)
       .type(' I am Hugo.')
       .rest(500)
@@ -43,13 +43,13 @@ export class HomepageComponent {
       .type('main Angular & Spring')
       .rest(600)
       .clear()
-      .type('used to microservices')
-      .rest(600)
-      .clear()
       .type('audio development')
       .rest(600)
       .clear()
       .type('music production')
+      .rest(600)
+      .clear()
+      .type('used to good practices')
       .rest(600)
       .start();
   }

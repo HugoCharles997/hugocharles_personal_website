@@ -19,7 +19,7 @@ export class NavbarComponent {
 
   constructor() {}
   ngOnInit() {
-    this.bounceDelayNavbar();
+    // this.bounceDelayNavbar();
     this.animateMenu();
     this.animateButtons();
   }
@@ -175,7 +175,6 @@ export class NavbarComponent {
       duration: 0.75,
       ease: 'bounce',
       repeat: 1,
-      transition: 'ease',
     });
 
     gsap.delayedCall(0.25, () => {
@@ -235,57 +234,57 @@ export class NavbarComponent {
     });
   }
 
-  bounceDelayNavbar() {
-    gsap.delayedCall(5, () => {
-      gsap.to('.home-button', {
-        duration: 1,
-        y: 50,
-        yoyo: true,
-        repeat: Infinity,
-        ease: 'bounce',
-        scale: 1.15,
-        repeatDelay: 8,
-        color: 'red',
-        transition: 'ease',
-      });
-    });
+  // bounceDelayNavbar() {
+  //   gsap.delayedCall(5, () => {
+  //     gsap.to('.home-button', {
+  //       duration: 1,
+  //       y: 50,
+  //       yoyo: true,
+  //       repeat: Infinity,
+  //       ease: 'bounce',
+  //       scale: 1.15,
+  //       repeatDelay: 8,
+  //       color: 'red',
+  //       transition: 'ease',
+  //     });
+  //   });
 
-    gsap.delayedCall(5.4, () => {
-      gsap.to('.about-button', {
-        duration: 1,
-        y: 50,
-        yoyo: true,
-        repeat: Infinity,
-        ease: 'bounce',
-        scale: 1.15,
-        repeatDelay: 8,
-      });
-    });
+  //   gsap.delayedCall(5.4, () => {
+  //     gsap.to('.about-button', {
+  //       duration: 1,
+  //       y: 50,
+  //       yoyo: true,
+  //       repeat: Infinity,
+  //       ease: 'bounce',
+  //       scale: 1.15,
+  //       repeatDelay: 8,
+  //     });
+  //   });
 
-    gsap.delayedCall(5.8, () => {
-      gsap.to('.projects-button', {
-        duration: 1,
-        y: 50,
-        yoyo: true,
-        repeat: Infinity,
-        ease: 'bounce',
-        scale: 1.15,
-        repeatDelay: 8,
-      });
-    });
+  //   gsap.delayedCall(5.8, () => {
+  //     gsap.to('.projects-button', {
+  //       duration: 1,
+  //       y: 50,
+  //       yoyo: true,
+  //       repeat: Infinity,
+  //       ease: 'bounce',
+  //       scale: 1.15,
+  //       repeatDelay: 8,
+  //     });
+  //   });
 
-    gsap.delayedCall(6.2, () => {
-      gsap.to('.music-button', {
-        duration: 1,
-        y: 50,
-        yoyo: true,
-        repeat: Infinity,
-        ease: 'bounce',
-        scale: 1.15,
-        repeatDelay: 8,
-      });
-    });
-  }
+  //   gsap.delayedCall(6.2, () => {
+  //     gsap.to('.music-button', {
+  //       duration: 1,
+  //       y: 50,
+  //       yoyo: true,
+  //       repeat: Infinity,
+  //       ease: 'bounce',
+  //       scale: 1.15,
+  //       repeatDelay: 8,
+  //     });
+  //   });
+  // }
 
   closeMenu() {
     this.animateButtonsReturn();
