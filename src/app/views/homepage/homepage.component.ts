@@ -43,7 +43,7 @@ export class HomepageComponent {
       .type('main Angular & Spring')
       .rest(600)
       .clear()
-      .type('audio development')
+      .type('learning audio programming')
       .rest(600)
       .clear()
       .type('music production')

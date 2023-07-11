@@ -21,10 +21,10 @@ export class CarouselComponent implements OnInit {
       'music production',
     ];
     const text2_options = [
-      'Angular, Material, GSAP, Bootstrap ',
-      'SpringBoot, Express.js, Symfony',
-      'JUCE, Max/MSP',
-      'Bitwig Studio, Ableton Live',
+      'SCSS, Bootstrap, GSAP, Angular, Material Design ...',
+      'SpringBoot, Symfony, SQL, MariaDB, Liquibase ...',
+      'C++ with JUCE, Max/MSP',
+      'Bitwig Studio, Ableton Live, sounddesign, hardware',
     ];
     const color_options = ['#efc2d5', '#272626', '#efc2d5', '#272626'];
     const image_options = [
